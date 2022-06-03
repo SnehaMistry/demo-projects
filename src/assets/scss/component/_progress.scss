@@ -1,0 +1,20 @@
+.progress-0{
+    transition: 0.4s all;
+    background-color: $white;
+}
+
+.progress-100{
+    transition: 0.4s all;
+    background-color: $primary;
+    .icon{
+        background-color:$primary;
+    }
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
