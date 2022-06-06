@@ -18,18 +18,18 @@ export class MultipleFormComponent implements OnInit {
       this.years.push(i);
     }
 
-    this.step = 0;
+    this.step = 1;
   }
 
   ngOnInit(): void {
   }
 
   public back(){
-    this.step -= 1;
+    (this.step > 1) ? this.step -= 1 : 0;
   }
 
   public continue(){
-    this.step += 1;
+    (this.step <5) ? this.step += 1 : 0;
   }
 
 }
